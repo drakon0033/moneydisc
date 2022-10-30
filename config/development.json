@@ -1,0 +1,17 @@
+{
+	"token": "NzgxMjU0NjU3MjQyMzAwNDc3.X76-GQ.sMcqDZ-1eIBJ_F_trlRBHNo59Y4",
+	"prefix": "!",
+	"mongo": {
+		"username": "deitysenpai",
+		"password": "deitypassword",
+		"name": "swag-dev1"
+	},
+	"roles": {
+		"834885543421804565": "100",
+		"834885596122972191": "200"
+	},
+	"price": {
+		"marry": 1000,
+		"clan": 2000
+	}
+}

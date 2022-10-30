@@ -1,0 +1,37 @@
+{
+  "name": "swag_bot",
+  "version": "0.0.1",
+  "description": "Bot for the pissda swag ",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon .",
+    "start": "cross-env NODE_ENV=production node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeitySenpai/swag-bot.git"
+  },
+  "keywords": [
+    "swagbot",
+    "discord-bot",
+    "bot",
+    "pissda",
+    "swag"
+  ],
+  "author": "DeitySenpai <mail@deitysenpai.team>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeitySenpai/swag-bot/issues"
+  },
+  "homepage": "https://github.com/DeitySenpai/swag-bot#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cross-env": "^7.0.3",
+    "discord.js": "^12.5.3",
+    "mongoose": "^5.12.4",
+    "ms": "^2.1.3"
+  }
+}
