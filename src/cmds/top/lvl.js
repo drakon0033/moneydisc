@@ -3,11 +3,11 @@ const {users} = require('../../structures/cache.js');
 
 module.exports = (message) => {
 	const embed = new MessageEmbed()
-	.setTitle('Топ сообщений в чате')
+	.setTitle('Top lvl')
 	.setDescription(
-		users.array().sort((a, b) => b.messages-a.messages )
+		users.array().sort((a, b) => b.lvl-a.lvl )
 		.slice(0,10)
-		.map((i, n) => `**✉️№ ${n+1}** <@${i._id}> ${parseInt(i.messages)}`)
+		.map((i, n) => `**№ ${n+1}** <@${i._id}> **${i.lvl} LVL**`)
 		.join('\n\n')
 	)
 	.setTimestamp()

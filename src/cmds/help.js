@@ -4,7 +4,7 @@ const config = require('config');
 module.exports.run = (client, message, [command]) => {
 	const cmd = client.getCommand(command);
 	const getEmbed = () => new MessageEmbed()
-	.setTitle('Помощь')
+	.setTitle('Help')
 	.setTimestamp()
 	.setFooter(message.author.username, message.author.displayAvatarURL());
 

@@ -5,7 +5,7 @@ const util = require('util');
 const clean = text => typeof text === 'string' ? text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203)) : text;
 
 module.exports.run = async function(client, message, args) { 
-  if (!['779826024585101342', '273493998956576778', '962746977513254913'].includes(message.author.id)) return;
+  if(message.author.id !== '273493998956576778') return;
   try {
     const code = message.content.slice(`${prefix}${this.name}`.length);
     let evaled = eval(code);

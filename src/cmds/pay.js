@@ -15,7 +15,7 @@ module.exports.run = (client, message, [ ,n ]) => {
 		return;
 	}
 	if(money > message.author.db.money) {
-		message.channel.send(`У вас недостаточно денег для перевода.`);
+		message.channel.send(`У вас недостаточно средств для перевода.`);
 		return;
 	}
 
@@ -25,9 +25,9 @@ module.exports.run = (client, message, [ ,n ]) => {
 	}
 
 	message.author.db.subMoney(money);
-	member.user.db.addMoney(money);
+	member.user.db.addMoney(money-money*0.01);
 
-	message.channel.send(`Вы успешно перевели **${money}** ${COIN}`);
+	message.channel.send(`Вы успешно перевели **${money}** ${COIN} (\`Комиссия 1%\`)`);
 }
 
 exports.config = {

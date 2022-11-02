@@ -10,8 +10,8 @@ module.exports.run = function(client, message, [ route ]) {
 		case 'divorce': 
 			divorceModule(message); 
 		break;
-	    default: 
-            client.getCommand('help').run(client, message, [ this.name ]);
+		default: 
+			client.getCommand('help').run(client, message, [ this.name ]);
 	}
 }
 
