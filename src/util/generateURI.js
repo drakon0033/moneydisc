@@ -13,7 +13,7 @@ function generateURI({ username = '', password = '', name = '' }) {
 		protocol: "mongodb+srv",
 		slashes: true,
 		auth: `${username}:${password}`,
-		host: 'cluster0-9vntb.mongodb.net',
+		host: 'cluster0.tllgdyj.mongodb.net',
 		pathname: name,
 		query: { retryWrites: true, w: 'majority' }
 	})
