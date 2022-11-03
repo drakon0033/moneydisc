@@ -46,7 +46,7 @@ module.exports = async(message) => {
 		message.author.db.setSpouse(member.id);
 		msg.edit(`${member} и ${message.member} вступили в брак.`);
 		message.channel.send(`${message.member} -${price} ${COIN}`);
-		message.author.db.subMoney(1000);
+		message.author.db.subMoney(4000);
 	})
 
 	choiser.on('reject', () => {

@@ -3,7 +3,7 @@ const { MessageEmbed, User } = require('discord.js');
 const { getXp, getLvl } = require('../util/lvlSystem.js');
 const {EMPTY_BAR, COIN} = require('../util/Constants.js').emoji;
 
-function bar(first, second, complt = '<:sssdsd:834473288327102464>', empty = EMPTY_BAR) {
+function bar(first, second, complt = '<a:bar_begin_pink:1037489779413110824>', empty = EMPTY_BAR) {
   let dif = Math.round((first * 10) / second)
   return complt.repeat(dif) + empty.repeat(10-dif);
 }
