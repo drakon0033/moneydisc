@@ -78,9 +78,9 @@ schema.methods = {
 		this.messages = n;
 		return this.save(); 
 	},
-	setVoiceTime(time) {
+	async setVoiceTime(time) {
 		this.voiceTime = time;
-		return this.save(); 
+		return await this.save(); 
 	}
 }
 

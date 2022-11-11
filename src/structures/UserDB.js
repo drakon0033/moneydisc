@@ -50,12 +50,12 @@ class UserDB {
 	get lvl() {
 		return getLvl(this.xp);
 	}
-	setMoney(money) {
+	async setMoney(money) {
 		this.money = Number(money);
-		return this.#db.setMoney(this.money).catch(console.error);
+		return await this.#db.setMoney(this.money).catch(console.error);
 	}
-	addMoney(money) {
-		return this.setMoney(this.money+money);
+	async addMoney(money) {
+		return await this.setMoney(this.money+money);
 	}
 	subMoney(money) {
 		return this.setMoney(this.money-money);
@@ -100,9 +100,9 @@ class UserDB {
 			await this.addMoney(money);
 		} 
 	}
-	setVoiceTime(time) {
+	async setVoiceTime(time) {
 		this.voiceTime = time;
-		return this.#db.setVoiceTime(this.voiceTime).catch(console.error);		 
+		return await this.#db.setVoiceTime(this.voiceTime).catch(console.error);		 
 	}
 	async addVoiceTime(time) {
 		const result = await this.setVoiceTime(this.voiceTime+time);
