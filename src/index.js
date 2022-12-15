@@ -74,5 +74,5 @@ mongoose.connect(generateURI(config.mongo), {
 }).then(async _ => {
 	await databaseCaching();
 	console.log('mongo connected!');
-	client.login(config.token);
+	client.login(process.env.DISCORD_TOKEN);
 })
