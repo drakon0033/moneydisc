@@ -1,10 +1,10 @@
-module.exports.run = function(client, message, args) {
-	message.channel.send('Понг!');
-}
+const { SlashCommandBuilder } = require('discord.js');
 
-exports.config = {
-	help: {
-		description: `Вспомогательная команда для разработчика.`,
-		usage: ''
-	}
-}
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('ping')
+		.setDescription('Replies with Pong!'),
+	async execute(interaction) {
+		await interaction.reply('Pong!');
+	},
+};
