@@ -1,5 +1,5 @@
 {
-	"token": "DISCORD_TOKEN",
+	"token": "",
 	"prefix": "!",
 	"mongo": {
 		"username": "bebra228",
